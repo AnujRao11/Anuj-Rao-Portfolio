@@ -36,6 +36,37 @@ const recognitions = [
   { year: '2023–24', title: 'Republic Day Camp', copy: 'Selected to represent the Uttar Pradesh Directorate at the Annual NCC Republic Day Camp in New Delhi.', image: 'ncc/rdc-portrait-new-delhi.jpg', alt: 'Anuj in his RDC uniform in New Delhi' },
 ];
 
+const milestoneGroups = [
+  {
+    title: 'NCC & service',
+    items: [
+      ['2022', 'EBSB Camp-II, Chennai', 'Participated in the Ek Bharat Shreshtha Bharat camp at Jeppiaar Institute of Technology, Chennai.'],
+    ],
+  },
+  {
+    title: 'Science & innovation',
+    items: [
+      ['2017', 'Maharajganj Vigyan Mahotsav', 'Participated in the science fair at the district science festival.'],
+      ['2018', 'Innovation workshop · first place', 'Placed first at a Council of Science & Technology, Uttar Pradesh workshop on innovation.'],
+      ['2019', 'Jawaharlal Nehru science exhibition', 'Presented a sustainable farming model at the state-level science, mathematics and environment exhibition.'],
+      ['2020', 'CSIR-CIMAP Gyan Vigyan Bal Mela', 'Participated in the science fair activities hosted by CSIR-CIMAP in Lucknow.'],
+      ['2020', 'India International Science Festival', 'Participated in IISF 2020, organised with the Ministry of Science and Technology and partner institutions.'],
+    ],
+  },
+  {
+    title: 'Sports & campus',
+    items: [
+      ['2018', '200 m race · third place', 'Finished third at the Maharajganj District Schools’ Association Sports Meet.'],
+      ['2019', 'International Yoga Day', 'Participated in a yoga skills demonstration for the fifth International Yoga Day.'],
+      ['2024', 'College Foundation Day quiz · second place', 'Placed second in a quiz competition as a first-year B.Sc. student.'],
+      ['2024', 'National Nutrition Month speech · third place', 'Placed third in a speech competition organised by the college Home Science Department.'],
+      ['2025–26', 'Hammer throw · third place', 'Placed third at the college Annual Sports Meet.'],
+      ['2025–26', 'Volleyball · third place', 'Earned third place in an inter-class college volleyball event.'],
+      ['2025–26', 'Javelin throw · 32.10 m', 'Recorded a throw of 32.10 metres at the university Annual Athletic Meet.'],
+    ],
+  },
+];
+
 function Arrow({ diagonal = false }) {
   return <span aria-hidden="true" className="arrow">{diagonal ? '↗' : '→'}</span>;
 }
@@ -114,6 +145,7 @@ function App() {
       <section className="recognition section-pad" id="achievements">
         <SectionHeading eyebrow="04 / Recognition" title="Milestones, made\nmeaningful." description="A few moments of recognition along the way — each one a reminder of the people, preparation and persistence behind it." />
         <div className="recognition-grid">{recognitions.map((item, i) => <article className="recognition-card" key={item.title}>{item.image ? <button className="recognition-image image-button" onClick={() => setActiveImage({ src: item.image, alt: item.alt, caption: `${item.title} · ${item.year}` })} aria-label={`View ${item.title} photograph`}><img src={img(item.image)} alt={item.alt} loading="lazy" /><span className="image-open">↗</span></button> : <div className="recognition-image recognition-note" aria-label="State Child Scientist at the 27th State Level National Children’s Science Congress, 2019"><span>27<sup>th</sup></span><small>STATE LEVEL<br />NATIONAL CHILDREN’S<br />SCIENCE CONGRESS · 2019</small></div>}<div className="recognition-meta"><span>{item.year}</span><span>0{i + 1} / 05</span></div><h3>{item.title}</h3><p>{item.copy}</p></article>)}</div>
+        <div className="milestone-groups"><div className="milestone-heading"><span className="eyebrow">MORE ALONG THE WAY</span><h3>Learning, service<br />and competition.</h3></div>{milestoneGroups.map((group) => <div className="milestone-group" key={group.title}><h4>{group.title}</h4>{group.items.map(([year, title, copy]) => <article className="milestone-item" key={title}><span>{year}</span><div><h5>{title}</h5><p>{copy}</p></div></article>)}</div>)}</div>
         <div className="press-row"><div><span className="eyebrow">IN THE LOCAL PRESS</span><p>Stories from Gorakhpur and Maharajganj have followed the RDC selection and return, as well as campus sports and community events.</p></div><button className="text-link" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}>Browse press clippings <Arrow /></button></div>
       </section>
 

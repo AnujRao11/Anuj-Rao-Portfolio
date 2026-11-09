@@ -97,3 +97,33 @@ There are 19 certificate/document scans and 16 personal record/CV images, making
 - NCC ‘B’ grade wording differs between the CV image and the certificate scan. No ‘B’ grade is published. The Certificate ‘C’ Alpha grade appears in the CV image, but not on the certificate scan; the site does not currently claim a grade.
 - No project screenshots, project repository links or finished technical projects were supplied. The projects area is marked as a future update.
 - No resume download is offered because the provided CV is an infographic with contact and signature information.
+
+## Supplemental records reviewed (15 images)
+
+A second batch of 15 document photographs was reviewed. It adds verified activity and award summaries to the Achievements section; the scans themselves are not copied to the public assets or repository because they show signatures, certificate/cadet identifiers, or other personal record details. Clearer scans of records already reviewed are treated as duplicate evidence, not additional achievements.
+
+### NCC and service
+
+- **2022:** Participated in EBSB Camp-II at Jeppiaar Institute of Technology, Chennai (6–15 November). The certificate’s registration number is not published.
+
+### Science and innovation
+
+- **2017:** Participated in the Maharajganj Vigyan Mahotsav science fair.
+- **2018:** Placed first at a Council of Science & Technology, Uttar Pradesh innovation workshop.
+- **2019:** Presented a sustainable farming model at the 47th State-Level Jawaharlal Nehru Science, Mathematics and Environment Exhibition.
+- **2020:** Participated in the CSIR-CIMAP Gyan Vigyan Bal Mela in Lucknow.
+- **2020:** Participated in the India International Science Festival, held 22–25 December.
+
+### Sports and campus activities
+
+- **2018:** Third place in the 200-metre race at the Maharajganj District Schools’ Association Sports Meet.
+- **2019:** Participated in a yoga-skills demonstration for the fifth International Yoga Day.
+- **2024:** Second place in a quiz competition for B.Sc. first-year students at the college Foundation Day event.
+- **2024:** Third place in a speech competition during National Nutrition Month at Mahatma Gandhi P.G. College.
+- **2025–26:** Third place in hammer throw at the college Annual Sports Meet.
+- **2025–26:** Third place in an inter-class volleyball event.
+- **2025–26:** Javelin throw result of 32.10 metres at the D.D.U. Gorakhpur University Annual Athletic Meet.
+
+### Supplemental record kept private
+
+- An employment contract from Blu Spring Technology includes a residential address and private employment terms. It is not published, and no employment claim has been added to the portfolio based on this document alone.
