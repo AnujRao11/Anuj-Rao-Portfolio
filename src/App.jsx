@@ -62,7 +62,7 @@ const milestoneGroups = [
       ['2024', 'National Nutrition Month speech · third place', 'Placed third in a speech competition organised by the college Home Science Department.'],
       ['2025–26', 'Hammer throw · third place', 'Placed third at the college Annual Sports Meet.'],
       ['2025–26', 'Volleyball · third place', 'Earned third place in an inter-class college volleyball event.'],
-      ['2025–26', 'Javelin throw · 32.10 m', 'Recorded a throw of 32.10 metres at the university Annual Athletic Meet.'],
+      ['2025–26', 'Javelin throw', 'Participated in the university Annual Athletic Meet.'],
     ],
   },
 ];

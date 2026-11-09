@@ -122,7 +122,7 @@ A second batch of 15 document photographs was reviewed. It adds verified activit
 - **2024:** Third place in a speech competition during National Nutrition Month at Mahatma Gandhi P.G. College.
 - **2025–26:** Third place in hammer throw at the college Annual Sports Meet.
 - **2025–26:** Third place in an inter-class volleyball event.
-- **2025–26:** Javelin throw result of 32.10 metres at the D.D.U. Gorakhpur University Annual Athletic Meet.
+- **2025–26:** Javelin throw participation at the D.D.U. Gorakhpur University Annual Athletic Meet. Distance omitted at Anuj’s request.
 
 ### Supplemental record kept private
 
