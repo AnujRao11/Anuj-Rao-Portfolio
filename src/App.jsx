@@ -132,7 +132,7 @@ function App() {
       </section>
 
       <section className="education section-pad" id="education">
-        <SectionHeading eyebrow="02 / Learning" title="A curious mind,\nwith room to grow." description="My education brings together computation, mathematical thinking and the physical world." />
+        <SectionHeading eyebrow="02 / Learning" title="A curious mind, and with room to grow." description="My education brings together computation, mathematical thinking and the physical world." />
         <div className="education-layout">
           <div className="education-feature"><div className="edu-number">01</div><div><span className="eyebrow">2024 — PRESENT</span><h3>Bachelor of Science</h3><p className="edu-school">Mahatma Gandhi P.G. College, Gorakhpur</p><p>Affiliated with Deen Dayal Upadhyaya Gorakhpur University. Coursework across Computer Applications, Mathematics and Physics.</p><div className="tag-row"><span>Computer Applications</span><span>Mathematics</span><span>Physics</span></div></div></div>
           <div className="education-side"><div className="edu-step"><span className="timeline-dot" /><div><span className="eyebrow">2023</span><h3>Senior Secondary</h3><p>Pt. Deen Dayal Inter College, Maharajganj</p><small>Science stream · Physics, Mathematics and Chemistry</small></div></div><div className="edu-step"><span className="timeline-dot" /><div><span className="eyebrow">2021</span><h3>Secondary</h3><p>Pt. Deen Dayal Inter College, Maharajganj</p></div></div><div className="edu-note"><span>↗</span><p>Learning is a practice. I’m building the fundamentals one semester at a time.</p></div></div>
