@@ -15,7 +15,7 @@ Create a production build with `npm run build`; preview it using `npm run previe
 
 ## Content and privacy
 
-The site uses selected event and portrait photographs from the supplied image folder. Identity cards, marksheets, grade sheets, income records, certificates containing cadet identifiers, and CV images containing private details are not included. Public facts are summarised as text. The email address is included at Anuj’s request; no phone number is published.
+The site uses selected event and portrait photographs from the supplied image folder. Identity cards, marksheets, grade sheets, income records, certificates containing cadet identifiers, and CV images containing private details are not included. Public facts are summarised as text. Anuj explicitly requested that his email and phone number be published; the contact section links the number to phone dialing and WhatsApp.
 
 No resume download is offered because the supplied CV image contains personal contact and signature information. No technical project or project link was present in the source material, so the projects section is an honest update-ready placeholder.
 

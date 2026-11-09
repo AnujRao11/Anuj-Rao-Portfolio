@@ -78,6 +78,14 @@ function SectionHeading({ eyebrow, title, description, light = false }) {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(null);
+  const [supportOpen, setSupportOpen] = useState(false);
+  const [supportReply, setSupportReply] = useState('');
+
+  const supportTopics = [
+    ['Education', 'Anuj is pursuing a B.Sc. at Mahatma Gandhi P.G. College, affiliated with D.D.U. Gorakhpur University.', '#education'],
+    ['NCC & RDC', 'Anuj served in the NCC Army Wing and attended Republic Day Camp 2024 in New Delhi.', '#ncc'],
+    ['Achievements', 'Explore Anuj’s NCC recognition, science activities, sports participation and media coverage.', '#achievements'],
+  ];
 
   useEffect(() => {
     if (!activeImage) return undefined;
@@ -160,10 +168,21 @@ function App() {
 
       <section className="interests-section"><div className="interests-inner section-pad"><div><span className="eyebrow">A LITTLE OFF THE PAGE</span><h2>Beyond the<br />classroom.</h2></div><div className="interest-list"><span>Cricket <i>01</i></span><span>Badminton <i>02</i></span><span>Defence & security <i>03</i></span><span>Science & technology <i>04</i></span><span>Leadership & teamwork <i>05</i></span></div></div></section>
 
-      <section className="contact-section section-pad" id="contact"><span className="eyebrow">08 / Say hello</span><h2>Good things begin<br />with a <em>conversation.</em></h2><p>For opportunities, ideas or a thoughtful exchange, I’d be glad to hear from you.</p><div className="contact-links"><a href="mailto:raoa12044@gmail.com">raoa12044@gmail.com <Arrow diagonal /></a><a href="https://www.linkedin.com/in/anuj-rao-ba6080263" target="_blank" rel="noreferrer">LinkedIn <Arrow diagonal /></a><a href="https://github.com/AnujRao11" target="_blank" rel="noreferrer">GitHub <Arrow diagonal /></a></div><span className="contact-location">GORAKHPUR, UTTAR PRADESH · INDIA</span></section>
+      <section className="contact-section section-pad" id="contact"><span className="eyebrow">08 / Say hello</span><h2>Good things begin<br />with a <em>conversation.</em></h2><p>For opportunities, ideas or a thoughtful exchange, I’d be glad to hear from you.</p><div className="contact-links"><a href="mailto:raoa12044@gmail.com">raoa12044@gmail.com <Arrow diagonal /></a><a href="tel:+919580003422">+91 95800 03422 <Arrow diagonal /></a><a href="https://wa.me/919580003422" target="_blank" rel="noreferrer">Message on WhatsApp <Arrow diagonal /></a><a href="https://www.linkedin.com/in/anuj-rao-ba6080263" target="_blank" rel="noreferrer">LinkedIn <Arrow diagonal /></a><a href="https://github.com/AnujRao11" target="_blank" rel="noreferrer">GitHub <Arrow diagonal /></a></div><span className="contact-location">GORAKHPUR, UTTAR PRADESH · INDIA</span></section>
     </main>
 
     <footer className="site-footer"><a className="wordmark" href="#home">AR<span>.</span></a><p>Building with curiosity.<br />Leading with discipline.<br />Growing with purpose.</p><a className="back-top" href="#home">Back to top ↑</a><span className="copyright">© 2026 ANUJ RAO</span></footer>
+
+    <div className="support-widget">
+      {supportOpen && <aside className="support-panel" id="portfolio-support-panel" aria-label="Portfolio guide">
+        <div className="support-panel-head"><span className="eyebrow">QUICK PORTFOLIO GUIDE</span><button type="button" onClick={() => setSupportOpen(false)} aria-label="Close portfolio guide">×</button></div>
+        <p>{supportReply || 'Hi! Choose a topic and I’ll point you to the right part of Anuj’s portfolio.'}</p>
+        <div className="support-options">{supportTopics.map(([label, reply, href]) => <button type="button" key={label} onClick={() => { setSupportReply(reply); document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }); }}>{label} <Arrow diagonal /></button>)}</div>
+        <a className="support-whatsapp" href="https://wa.me/919580003422" target="_blank" rel="noreferrer">Chat with Anuj on WhatsApp <Arrow diagonal /></a>
+        <small>Portfolio guide · quick links, with WhatsApp for direct contact</small>
+      </aside>}
+      <button className="support-toggle" type="button" aria-expanded={supportOpen} aria-controls="portfolio-support-panel" onClick={() => setSupportOpen(!supportOpen)}>{supportOpen ? 'Close guide ×' : 'Need a quick guide?'} <span aria-hidden="true">↗</span></button>
+    </div>
 
     {activeImage && <div className="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" onClick={() => setActiveImage(null)}><button className="lightbox-close" onClick={() => setActiveImage(null)} aria-label="Close photo">×</button><figure onClick={(event) => event.stopPropagation()}><img src={img(activeImage.src)} alt={activeImage.alt} /><figcaption>{activeImage.caption}</figcaption></figure></div>}
   </>;

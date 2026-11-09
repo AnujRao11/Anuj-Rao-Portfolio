@@ -88,7 +88,7 @@ There are 19 certificate/document scans and 16 personal record/CV images, making
 - NCC Army Wing; NCC Certificate ‘B’ (2023), Certificate ‘C’ (2024), and participation in the Annual NCC Republic Day Camp in New Delhi from 29 December 2023 to 28 January 2024.
 - DG Medal and ADG Commendation Card are described using the supplied CV and ceremony photographs. The ADG commendation is also visible in a certificate scan that is not published.
 - State Child Scientist recognition at the 27th State Level National Children’s Science Congress (2019) and an INSPIRE award are presented as text, without exposing their certificate scans.
-- Public email appears only because Anuj approved it in this conversation. Phone number is omitted.
+- Public email and phone number are included at Anuj’s explicit request. The phone number links to direct dialing and WhatsApp.
 
 ## Details intentionally omitted pending clarification
 
